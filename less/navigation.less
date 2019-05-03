@@ -1,15 +1,19 @@
 // Navigation code here
 
 .top-nav{
-    width:90%;
-    margin:auto;
-    text-align: center;	
+    width:100%;
+    .header-mix();
     background:@wild-sand;
     padding: 5px 10px 10px 10px;
+
+    @media @phone{
+        width:100%;
+    }
 
     h1 {	
         font-size: 40px;	
         margin: 20px 0;	
+
       }
 
       a{

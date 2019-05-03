@@ -1,8 +1,8 @@
 // Mixins Here
 
-.botton {
-    padding: 9px 20px;
-    border-radius: 7px;
+.botton(@padding, @border-radius) {
+    padding: @padding;
+    border-radius:@border-radius ;
     font-size:20px;
     background-color:@header-font-color;
     color: white;
@@ -12,4 +12,17 @@
       // The compiled color returned is #006667 
       background-color: darken(blue, 40%)
     }
+  }
+
+
+  .header-mix() {	
+    display: flex;	
+    flex-direction: column;	
+    align-items: center;	
+    justify-content: center;	
+  }
+
+  .home-page-walk(){
+     display:flex;
+     justify-content: center;
   }
