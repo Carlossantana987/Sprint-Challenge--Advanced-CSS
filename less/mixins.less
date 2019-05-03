@@ -1,1 +1,15 @@
 // Mixins Here
+
+.botton {
+    padding: 9px 20px;
+    border-radius: 7px;
+    font-size:20px;
+    background-color:@header-font-color;
+    color: white;
+    cursor: pointer;
+  
+    &:hover {
+      // The compiled color returned is #006667 
+      background-color: darken(blue, 40%)
+    }
+  }
